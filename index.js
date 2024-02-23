@@ -29,6 +29,8 @@ const URL_WITH_USERNAME = URL.replace("<username>", USERNAME);
 const MONGODB_URL = URL_WITH_USERNAME.replace("<password>", PASSWORD);
 const PORT = process.env.PORT || 5000;
 
+// const MONGODB_URL = 'mongodb+srv://omBhandari:0bs9lkABcrRZ2rxC@cluster0.ikvvtfe.mongodb.net/natours?retryWrites=true&w=majority';
+
 mongoose
   .connect(MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() =>
